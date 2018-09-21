@@ -1,0 +1,35 @@
+Exercise 1.2
+Kelsey Brouwer, CS 262 Lab 01
+
+1. Demographics
+	a. I am a senior
+	b. BA in CS (and BA in Mathematics)
+	c. CS 112 - A; CS 212 - A
+2. Technical
+	a. I have no experience in these areas.
+	b. I have used GitHub to store/update my work for both of my summer research projects.
+	   Part of the idea was to use GitHub for versioning, although I don't know if I was 
+	   using it correctly in that capacity.
+	c. I have a Moto G4 Plus that currently runs Android 7.0.
+	d. I would like to work on a project that I would be interested in using. I would 
+	   probably have more ideas to contribute to a practical project than one making 
+	   a game or something else "fun". I am quite interested in Gavin's idea of the service 
+     IT help app for Steelcase - it seems like a practical idea that would be useful and 
+     helpful in my computer science education. As suggested in Exercise 1.1, I would 
+     also be interested in a project that helps students connect and help each other 
+     out with things like ordering food, organizing grocery runs, and coordinating rides 
+     to events.
+3. Personality
+	a. Openness - 48%
+	   Conscientiousness - 73%
+	   Extraversion - 62.5%
+	   Agreeableness - 54%
+	   Neuroticism - 58%
+	   Core pattern - practical caretaker largest at 53%
+	b. I don't have any very strong feelings on who I work with. I feel like I know several
+	   students in the class, but none of them very well. I am open to working with new 
+	   people. I am friends with Andrew Fulling.
+4. I am a commuting student, so I often prefer to work in the computer science labs between
+   other classes / during the day instead of meeting in the evenings, etc. I know this 
+   doesn't always work for other students, but if anyone else expressed a desire to work
+   during the day, we might be good people to put together.
