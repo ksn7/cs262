@@ -1,0 +1,13 @@
+Kelsey Brouwer
+Professor Plantinga
+CS 262-A
+September 28, 2018
+Team F – Wingdings: Deliverable 1 Review
+       The Wingdings team wants to build a party game app, so their vision statement is comprised of a brief blurb explaining the general format of the game and some
+description of gameplay. I think this vision statement is intriguing and makes me want to try the game, but it is also very simplistic and perhaps a little too bare. It 
+might function well as an advertisement for the game, but in my mind a vision statement is a little more fleshed out with where the project is intended to go and the 
+motivations behind the project. I see very little in this regard in the vision statement. Overall, I think it successfully gives a basic description of the app the team intends
+to build with enough details to get an audience interested, but it might be lacking as a guiding document for the developers themselves. 
+       The prototype code for this project is available on GitHub. They have a basic app prepared that runs and displays the name.There seems to be little to no documentation 
+at this point, but it is a very simple app. But I could find the files I needed to and the code seems to be clean and correct. This is a good basic app.
+       
