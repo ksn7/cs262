@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void searchPlayers(View view) {
+        // Take input as string, check if negative input, mark if nonempty
         String mQueryString = playerInput.getText().toString();
         int queryNumber = -1;
         Boolean nonempty = false;
