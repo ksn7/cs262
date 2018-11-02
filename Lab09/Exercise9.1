@@ -1,0 +1,25 @@
+Kelsey Brouwer - Lab 9 Exercise 9.1
+Professor VanderLinden
+CS 262-A
+11/02/18
+
+a. There are 3 API endpoints (players (GET), player/id (GET, PUT, DELETE),
+   and player (POST)), implemented in PlayerResource.java.
+b. PlayerResource.java
+	i. JDBC
+	ii. Compare and contrast
+		1. Both are used to access data from the database. On the other hand, a JDBC statement
+		   is an object while a SQL query is just something that runs. A JDBC object executes
+		   a static SQL statement and returns the result as a table. 
+		2. An SQL relation refers to the table where data is stored. A JDBC result set is also 
+		   a table (the result of an SQL query) stored as an object. A list of players
+		   is a list which contains player objects, all of which contain their own data.
+	iii. This command returns a value as a string that could be used in an SQL command. 
+	   If the value is NULL, it returns an unquoted NULL, which could also be used in an 
+	   SQL command. This way, no matter what gets returned it won't break your SQL code.
+c. Player.java
+	i. "This provides an object-oriented way to represent and manipulate player "objects" 
+	   from the traditional (non-object-oriented) Monopoly database." -qtd Player.java
+	ii. The Player table contains a set of tuples which contain data but are not objects. 
+	   So the data from the player table can't derive new data from its own contents like 
+	   the Player DAO can.
