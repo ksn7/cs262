@@ -23,12 +23,17 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity
-                implements LoaderManager.LoaderCallbacks<String> {
+        implements LoaderManager.LoaderCallbacks<String> {
 
     private EditText playerInput;
     private TextView mOutputText;
     private Context context;
 
+    /**
+     * onCreate sets up the saved instance state
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +41,17 @@ public class MainActivity extends AppCompatActivity
         context = getApplicationContext();
         playerInput = (EditText) findViewById(R.id.playerInput);
         mOutputText = (TextView) findViewById(R.id.titleText);
-        if(getSupportLoaderManager().getLoader(0)!=null){
-            getSupportLoaderManager().initLoader(0,null,this);
+        if (getSupportLoaderManager().getLoader(0) != null) {
+            getSupportLoaderManager().initLoader(0, null, this);
         }
     }
 
+    /**
+     * searchPlayers handles in user input when the button is pressed.
+     * Handles case of empty search and handles improper input cases
+     *
+     * @param view
+     */
     public void searchPlayers(View view) {
         // Take input as string, check if negative input, mark if nonempty
         String mQueryString = playerInput.getText().toString();
@@ -70,12 +81,25 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Creates PlayerLoader
+     *
+     * @param i
+     * @param bundle
+     * @return
+     */
     @NonNull
     @Override
     public Loader<String> onCreateLoader(int i, @Nullable Bundle bundle) {
         return new PlayerLoader(this, bundle.getString("queryString"));
     }
 
+    /**
+     * onLoadFinished turns the JSON response from the loader into displayable text
+     *
+     * @param loader
+     * @param s
+     */
     @Override
     public void onLoadFinished(@NonNull Loader<String> loader, String s) {
         try {
@@ -125,11 +149,22 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Placeholder for resetting the loader
+     *
+     * @param loader
+     */
     @Override
     public void onLoaderReset(@NonNull Loader<String> loader) {
 
     }
 
+    /**
+     * onCreateOptionsMenu
+     *
+     * @param menu
+     * @return true to mark it worked
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -137,6 +172,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Handler for settings when an item is selected. Doesn't do much at this point
+     *
+     * @param item
+     * @return result of super-call
+     */
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:

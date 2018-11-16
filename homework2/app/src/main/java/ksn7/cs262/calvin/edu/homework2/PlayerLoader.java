@@ -5,10 +5,16 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.AsyncTaskLoader;
 
-public class PlayerLoader extends AsyncTaskLoader<String>{
+public class PlayerLoader extends AsyncTaskLoader<String> {
 
     private String mQueryString;
 
+    /**
+     * constructor
+     *
+     * @param context
+     * @param queryString
+     */
     public PlayerLoader(@NonNull Context context, String queryString) {
         super(context);
         mQueryString = queryString;

@@ -1,0 +1,11 @@
+Kelsey Brouwer CS 262-A Lab11
+
+1. GitHub and my local machine have somehow deleted all of my code for homework1, so I am unable to review this code.
+
+2. homework2
+  - Ran Reformat Code to help with white space and proper JavaDoc formatting
+  - Minimal initial documentation, so added JavaDoc, primarily to MainActivity, NetworkUtils, and PlayerLoader. Documented important methods especially. Documented some methods as not working and gave suggestions of what might be the problem.
+  - Some methods not documented, primarily when they were one line or self-explanatory (ex called super, few lines with self-explanatory method name).
+  
+  
+3. homework3: no coding was part of this assignment

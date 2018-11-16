@@ -13,16 +13,23 @@ import java.net.URL;
 public class NetworkUtils {
 
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
-    private static final String PLAYER_BASE_URL =  "https://calvincs262-monopoly.appspot.com/monopoly/v1/"; // Base URI for player data
+    private static final String PLAYER_BASE_URL = "https://calvincs262-monopoly.appspot.com/monopoly/v1/"; // Base URI for player data
 
-    static String getPlayerInfo(String queryString){
+    /**
+     * Currently malfunctioning for an unknown reason. Supposed to getPlayerInfo based on input
+     * Issue possibly with the base URI or URL construction?
+     *
+     * @param queryString
+     * @return playerInfo as found, or null if no results
+     */
+    static String getPlayerInfo(String queryString) {
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
         String playerJSONString = null;
         String playerURL = null;
         try {
             // Append base URL based on the query
-            if (queryString.equals("")){
+            if (queryString.equals("")) {
                 playerURL = PLAYER_BASE_URL + "players";
             } else {
                 playerURL = PLAYER_BASE_URL + "player/ID";
